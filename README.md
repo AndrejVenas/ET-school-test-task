@@ -14,17 +14,14 @@ This document serves as the project documentation for the ET School Test Task. T
     Navigate to your desired directory:
 ```
 cd ~/{your_path}
-git clone https://github.com/{your_repo}/ET-school-test-task
+git clone https://github.com/AndrejVenas/ET-school-test-task
 ```
 2) Database Setup
 
-    Create a new PostgreSQL database:
+   Create a new PostgreSQL database and tables:
 ```
 CREATE DATABASE eliftech_testtask;
-```
-    Execute the SQL script provided in database.sql to create the necessary tables:
 
-```
 psql -U your_username -d eliftech_testtask -a -f ./database.sql
 ```
 
