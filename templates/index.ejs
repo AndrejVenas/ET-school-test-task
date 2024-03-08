@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
+  <script src="./js/shop.js" defer></script>
+</head>
+<body>
+  
+  <%- include('./partials/header') %>
+
+  <main class="main">
+    <!-- <aside class="filter">
+      <form class="filter__form" action="">
+        <span class="checkbox-wrapper">
+          <label for="manufacturer">manufacturer 1</label>
+          <input name="manufacturer" type="checkbox">
+        </span>
+        <button class="filter__btn blue-btn" type="submit">Submit</button>
+      </form>
+    </aside> -->
+    <div class="container">
+      <section class="card">
+        <% cards.forEach(row => { %>
+        <div id="<%= row.p_id %>" class="item-product">
+          <img src="./images/product1.jpg" alt="product name" class="item-product__img">
+          <h4 class="item-product__title"><%= row.p_name %></h4>
+          <p class="item-product__price">Price: <%= row.p_price %>$</p>
+          <button data-id="<%= row.p_id %>" class="item-product__btn blue-btn">Add to cart</button>
+        </div>
+        <% }); %>
+       
+      </section>
+
+    </div>
+    
+  </main>
+
+  <%- include('./partials/footer') %>
+
+</body>
+</html>

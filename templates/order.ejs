@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/order.js" defer></script>
+</head>
+<body>
+  <%- include('./partials/header') %>
+
+  <main class="main">
+    <section class="order">
+      <div class="container">
+        <div class="order__inner">
+          <h2 class="order__title">Check order</h2>
+          <p class="order__descr">Enter number of your ticket:</p>
+          <form class="order__form">
+            <input id="ticket" type="num" class="order__form-input blue-input">
+            <button class="order__form-btn blue-btn" type="submit">Check order</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- include('./partials/footer') %>
+</body>
+</html>

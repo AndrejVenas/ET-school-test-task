@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/cart.js" defer></script>
+</head>
+
+<body>
+  <%- include('partials/header') %>
+
+  <main class="main">
+    <div class="container">
+
+      <section class="about">
+        <h2 class="about__title">Hello everyone!</h2>
+        <p class="about__descr">
+          This project was build on JavaScript and NodeJs.
+        </p>
+        <ul class="about__list">
+          <li class="about__list-title">What use:</li>
+          <li>PostgreSQL 16.2</li>
+          <li>NodeJS 20+</li>
+          <li>EJS</li>
+          <li>Express</li>
+        </ul>
+        <ul class="my-contacts">
+          <li class="my-contacts__title">My contacts</li>
+          <li class="my-contacts__item"><a href="tel: +380989050920">+38(098)905 0920</a></li>
+          <li class="my-contacts__item"><a href="mailto: andrejkalinenko@gmail.com">andrejkalinenko@gmail.com</a></li>
+          <li class="my-contacts__item">Ukraine, Kharkiv</li>
+        </ul>
+        <ul class="quest-list">
+          <li class="quest-list__item">
+            What's not exist now?
+          </li>
+          <li>Admin panel</li>
+          <li>Adaptive pages</li>
+          <li>Filter on shop</li>
+          <li>Field img in db for product</li>
+        </ul>
+        <p class="estimate">Estimate: 30-35hours</p>
+      </section>
+      
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+
+</html>

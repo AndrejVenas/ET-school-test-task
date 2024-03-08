@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliftech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/cart.js" defer></script>
+</head>
+
+<body>
+  <%- include('partials/header') %>
+
+  <main class="main">
+    <div class="container">
+
+      <form action="" class="cart">
+        <div class="cart__wrapper">
+          <div class="cart__user-info">
+            <span class="cart-input__wrapper">
+              <label for="fname">Name</label>
+              <input id="fname" name="fname" type="text" class="cart-input">
+            </span>
+            <span class="cart-input__wrapper">
+              <label for="lname">Surname</label>
+              <input id="lname" name="lname" type="text" class="cart-input">
+            </span>
+            <span class="cart-input__wrapper">
+              <label for="mail">Email</label>
+              <input id="mail" name="mail" type="mail" class="cart-input">
+            </span>
+            <span class="cart-input__wrapper">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="number" class="cart-input">
+            </span>
+            <span class="cart-input__wrapper">
+              <label for="adress">Adress</label>
+              <input id="adress" name="adress" type="text" class="cart-input">
+            </span>
+          </div>
+          <div class="cart__order-info">           
+            <div class="cart__order-card order-card">
+              <img src="./images/product1.jpg" alt="product name" class="cart-order__img">
+              <div class="order-card__info">
+                <h3 class="order-card__title">
+                </h3>
+                <p class="order-card__price">
+                </p>
+                <div class="order-card__count order-count">
+                  <p class="order-count__num">
+                    1
+                  </p>
+                  <button type="button">+</button>
+                  <button type="button">-</button>
+                </div>
+              </div>
+              <button class="order-card__close-btn" type="button">
+                X
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <button class="cart__button blue-btn" type="submit">Submit</button>
+      </form>
+      
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+
+</html>
